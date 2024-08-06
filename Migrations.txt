@@ -1,0 +1,6 @@
+Migrations for each model
+Npx sequelize-cli model:generate –name User –attributes user_id:INTEGER,username:STRING,email:STRING,password:STRING,created_at:DATE,updated_at:DATE
+Npx sequelize-cli model:generate –name Expense –attributes expense_id:INTEGER,user_id:INTEGER,category_id:INTEGER,amount:DECIMAL,date:DATE,description:STRING,created_at:DATE,updated_at:DATE
+Npx sequelize-cli model:generate –name Category –attributes category_id:INTEGER,user_id:INTEGER,category_name:STRING,created_at:DATE,updated_at:DATE
+Npx sequelize-cli model:generate –name PaymentMethod –attributes payment_method_id:INTEGER,user_id:INTEGER,payment_method_name:STRING,created_at:DATE,updated_at:DATE
+Npx sequelize-cli model:generate –name Budget –attributes budget_id:INTEGER,user_id:INTEGER,category_id:INTEGER,amount:DECIMAL,start_date:DATE,end_date:DATE,created_at:DATE,updated_at:DATE
